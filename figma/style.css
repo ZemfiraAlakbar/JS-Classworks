@@ -1,0 +1,32 @@
+.contaner{
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.dark{
+    text-decoration: none;
+    color: black;
+}
+.search{
+outline: none;
+width: 400px;
+margin-top: 50px;
+}
+.fa-moon{
+    margin-right: 10px;
+}
+.select-search{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#select{
+    height: 30px;
+}
+.card{
+    text-decoration: none;
+}

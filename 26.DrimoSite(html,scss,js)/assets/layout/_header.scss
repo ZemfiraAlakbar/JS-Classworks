@@ -1,0 +1,28 @@
+.container
+{
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        nav{
+            ul{
+                display: flex;
+                column-gap: 25px;
+                align-items: center;
+                li{
+                    a{
+                        color: black;
+                        transition: 0.5s;
+                        &:hover{
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+header{
+position: fixed;
+top: 0;
+}

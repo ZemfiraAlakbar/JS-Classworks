@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "name": "Lee",
+      "surname": "Stevenson",
+      "email": "stevenson@gmail.com",
+      "id": 3,
+      "date": "2023-05-16T18:48:57.583Z",
+      "photo": "./images/lee.jpg"
+    },
+    {
+      "name": "Jhonny",
+      "surname": "Deep",
+      "email": "jhonny90@gmail.com",
+      "date": "2023-05-16T18:49:22.394Z",
+      "id": 6,
+      "photo": "./images/jhonny.jpg"
+    },
+    {
+      "photo": "./images/alfredo.jpg",
+      "name": "Alfredo",
+      "surname": "Doe",
+      "email": "doe@gmail.com",
+      "date": "2023-05-19T13:18:45.582Z",
+      "id": 8
+    },
+    {
+      "photo": "./images/ego.jpg",
+      "name": "Ego",
+      "surname": "Anton",
+      "email": "anton@gmail.com",
+      "date": "2023-05-19T13:23:36.379Z",
+      "id": 9
+    },
+    {
+      "photo": "./images/vladimir.jpg",
+      "name": "Vladimir",
+      "surname": "Alexender",
+      "email": "alexender@gmail.com",
+      "date": "2023-05-21T20:16:27.020Z",
+      "id": 10
+    }
+  ]
+}

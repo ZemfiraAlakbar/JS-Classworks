@@ -1,0 +1,54 @@
+{
+  "children": [
+    {
+      "name": "Mark",
+      "years": "12",
+      "id": 4,
+      "image": "./imgs/children_3.jpg"
+    },
+    {
+      "name": "Mellisa",
+      "years": "6",
+      "id": 5,
+      "image": "./imgs/children_2.jpg"
+    },
+    {
+      "name": "Ben",
+      "years": "14",
+      "id": 7,
+      "image": "./imgs/children_5.jpg"
+    },
+    {
+      "image": "./imgs/children_1.jpg",
+      "name": "kevin",
+      "years": "12",
+      "id": 9
+    },
+    {
+      "image": "./imgs/children_4.jpg",
+      "name": "Jessa",
+      "years": "15",
+      "id": 10
+    }
+  ],
+  "favorites": [
+    {
+      "name": "Mark",
+      "years": "12",
+      "id": 4,
+      "image": "./imgs/children_3.jpg"
+    },
+    {
+      "name": "Ben",
+      "years": "14",
+      "id": 7,
+      "image": "./imgs/children_5.jpg"
+    },
+    {
+      "image": "./imgs/children_1.jpg",
+      "name": "kevin",
+      "years": "12",
+      "id": 9
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "title": "WEB DEVELOPMENT",
+      "describtion": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "id": 5,
+      "price": 250,
+      "image": "./imgs/editing.png"
+    },
+    {
+      "image": "./imgs/undefined",
+      "title": "PHOTOGRAPHY",
+      "describtion": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "price": "580",
+      "id": 6
+    },
+    {
+      "image": "./imgs/photo-camera-interface-symbol-for-button.png",
+      "title": "DIGITAL MEDIA",
+      "describtion": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "price": "440",
+      "id": 7
+    }
+  ],
+  "favs": [
+    {
+      "image": "./imgs/photo-camera-interface-symbol-for-button.png",
+      "title": "DIGITAL MEDIA",
+      "describtion": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "price": "440",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "gym": [
+    {
+      "img": "./assets/image/o1.png",
+      "title": "Regular Exercise",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      "id": 1
+    },
+    {
+      "img": "./assets/image/o2 (2).png",
+      "title": "Training on the go",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ladore",
+      "id": 2
+    }
+  ],
+  "favs": [
+    {
+      "img": "./assets/image/o2 (2).png",
+      "title": "Training on the go",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ladore",
+      "id": 2
+    },
+    {
+      "img": "./assets/image/o1.png",
+      "title": "Regular Exercise",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      "id": 1
+    },
+    [
+      {
+        "img": "./assets/image/o1.png",
+        "title": "Regular Exercise",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "id": 1
+      },
+      {
+        "img": "./assets/image/o2 (2).png",
+        "title": "Training on the go",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ladore",
+        "id": 2
+      }
+    ],
+    [
+      {
+        "img": "./assets/image/o1.png",
+        "title": "Regular Exercise",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "id": 1
+      },
+      {
+        "img": "./assets/image/o2 (2).png",
+        "title": "Training on the go",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ladore",
+        "id": 2
+      }
+    ]
+  ]
+}

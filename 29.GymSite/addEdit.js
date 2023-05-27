@@ -25,13 +25,15 @@ form.addEventListener("submit" , function (e) {
         description: descInput.value,
         img: `./assets/image/${fileInput.value.split("\\")[2]}`,
     }
-
-
-    if (id) {
-        axios.patch(`http://localhost:8060/gym/${id}`,obj)
+    
+      if (obj.title && obj.describtion) {
+        if (id) {
+            axios.patch(`http://localhost:8060/gym/${id}`,obj)
+        } else {
+            axios.post("http://localhost:8060/gym",obj)
+        }
+        window.location="./index.html"
+       } else {
+        alert("Pls, fill all the fields!")
        }
-    else{
-        axios.post(`http://localhost:8060/gym`,obj)
-       }
-       window.location="./index.html"
 })

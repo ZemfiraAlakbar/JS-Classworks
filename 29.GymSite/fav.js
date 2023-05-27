@@ -19,7 +19,8 @@ function getDataFromFav(arr) {
             ${el.description}
           </p>
           <a href="details.html?id=${el.id}" class="viewBtn">VIEW DETAILS</a>
-        </div>
+          <a href="#" class="btn btn-danger" onclick=deleteFromFav("${el.id}",this)>Delete</a>
+      </div>
       </div>
         `
     });

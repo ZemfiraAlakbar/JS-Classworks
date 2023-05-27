@@ -1,5 +1,7 @@
 let searchInp = document.querySelector("#search");
 let cards = document.querySelector(".cards");
+let sortBtn = document.querySelector(".sortedbtn");
+
 // let filtered = [];
 // let copyData = [];
 
@@ -50,3 +52,20 @@ searchInp.addEventListener("input" , function (e) {
    getAllData(filtered)
     })
  })
+
+let bool = false;
+sortBtn.addEventListener("click", function () {
+  bool = !bool;
+  console.log(bool);
+
+  axios.get("http://localhost:8060/gym").then((res) => {
+    let sorted = res.data.sort((a, b) => {
+      if (!bool) {
+        return a.title.localeCompare(b.title)
+      } else {
+        return b.title.localeCompare(a.title)
+      }
+    });
+    getAllData(sorted);
+  });
+});

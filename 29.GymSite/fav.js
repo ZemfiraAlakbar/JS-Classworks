@@ -24,3 +24,8 @@ function getDataFromFav(arr) {
         `
     });
 }
+
+async function deleteFromFav(id,btn) {
+    await axios.delete(`http://localhost:8080/favs/${id}`)
+    btn.parentElement.parentElement.remove()
+}

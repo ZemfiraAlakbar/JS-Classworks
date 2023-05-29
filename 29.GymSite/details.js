@@ -1,16 +1,21 @@
 let cards=document.querySelector(".cards")
 
-let id = new URLSearchParams(window.location.search).get('id')
+let id = new URLSearchParams(window.location.search).get("id")
 
-axios(`http://localhost:8080/gym/${id}`).then((res)=>{
+axios.get(`http://localhost:8080/Cards/${id}`).then((res)=>{
+    data=res.data
+    cards.innerHTML=``
     cards.innerHTML=`
-    <div class="col col-lg-3 col-md-6 col-sm-12">
-    <div class="content">
-      <img src="${res.data.img}" alt="" />
-      <h3 class="mt-3">${res.data.title}</h3>
-      <p class="comment">
-        ${res.data.description}
-      </p>
-    </div>
-  </div>
-    `})
+    <span class="col-lg-4 col-md-6 mt-3">
+               <div class="card p-3">
+                <img src="${data.image}" alt="" width="80px" height="80px" style="display: inline-block; margin-left: 130px;">
+                <br>
+                <h3 class="text-center">${data.title}</h3>
+                <br>
+                <p class="text-center text-secondary">${data.desc}</p>
+               <p>Price: <span class="text-danger">$${data.price}</span></p>
+               <p>Id: <span class="text-success">${data.id}</span></p>
+            </div>
+            </span>
+    `
+})

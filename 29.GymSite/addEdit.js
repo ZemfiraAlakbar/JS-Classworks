@@ -1,39 +1,46 @@
-let form = document.querySelector("form")
-let titleInput = document.querySelector("#title")
-let descInput = document.querySelector("#desc")
-let fileInput = document.querySelector("#img")
-let submitBtn = document.querySelector(".submit")
+let titleInput = document.querySelector("#title");
+let descInput = document.querySelector("#desc");
+let priceInput = document.querySelector("#price");
+let fileInput = document.querySelector(".file");
+let submitBtn = document.querySelector(".submit");
+let form = document.querySelector("#form");
+let add = document.querySelector(".add");
 
+let id = new URLSearchParams(window.location.search).get("id");
 
-let id = new URLSearchParams(window.location.search).get("id")
+axios(`http://localhost:8080/Cards/${id}`).then((res) => {
+  data = res.data;
 
-axios.get(`http://localhost:8060/gym/${id}`).then((res)=>{
-    data=res.data
-    console.log(data);
+  (titleInput.value = data.title),
+    (descInput.value = data.desc),
+    (priceInput.value = data.price);
+});
 
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    titleInput.value=data.title,
-    descInput.value=data.description
-})
+  let obj = {
+    title: titleInput.value,
+    desc: descInput.value,
+    price: +priceInput.value,
+    image: `./images/${fileInput.value.split("\\")[2]}`,
+  };
 
-
-form.addEventListener("submit" , function (e) {
-    e.preventDefault()
-
-    let obj={
-        title: titleInput.value,
-        description: descInput.value,
-        img: `./assets/image/${fileInput.value.split("\\")[2]}`,
+  if (obj.title && obj.desc && obj.price) {
+    if (id) {
+      axios.patch(`http://localhost:8080/Cards/${id}`, obj);
+    } else {
+      axios.post(`http://localhost:8080/Cards`, obj);
     }
-    
-      if (obj.title && obj.describtion) {
-        if (id) {
-            axios.patch(`http://localhost:8060/gym/${id}`,obj)
-        } else {
-            axios.post("http://localhost:8060/gym",obj)
-        }
-        window.location="./index.html"
-       } else {
-        alert("Pls, fill all the fields!")
-       }
-})
+    window.location = "./index.html";
+  } else {
+    alert("Pls,fill all the fields!");
+  }
+});
+
+if (id) {
+  submitBtn.value = "Edit";
+  add.innerHTML = "Edit a Card";
+} else {
+  submitBtn.value = "Submit";
+}

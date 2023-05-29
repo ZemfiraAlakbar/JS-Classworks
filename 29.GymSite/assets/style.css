@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 30px 0;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: white;
+}
+header .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-top p {
+  width: 300px;
+  font-weight: 500;
+}
+header .header-top .fa-bars {
+  display: none;
+}
+header .header-top .tel {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+header .header-top .tel span {
+  font-weight: 500;
+}
+header .header-top .tel .fa-phone {
+  background-color: red;
+  padding: 30px;
+  color: white;
+}
+header .header-bottom .element .fa-bars {
+  display: none;
+}
+header .header-bottom .element ul {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+header .header-bottom .element ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  transition: 0.5s;
+}
+header .header-bottom .element ul li a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 767px) {
+  header .header-bottom {
+    display: none;
+  }
+  header .header-top .tel {
+    display: none;
+  }
+  header .header-top p {
+    display: none;
+  }
+  header .header-top .fa-bars {
+    display: block;
+    color: red;
+  }
+  header .header-top img {
+    margin-left: 150px;
+  }
+}
+#sec1 {
+  background-image: url(../images/header-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+#sec1 .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+#sec1 .text .real {
+  font-size: 90px;
+  width: 1000px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  #sec1 {
+    max-width: 100%;
+    background-position: center;
+  }
+  #sec1 .text .real {
+    font-size: medium;
+    width: 300px;
+  }
+}
+.sec2 .cards span .card {
+  box-shadow: 3px 3px 3px 5px rgba(243, 52, 52, 0.5);
+}
+
+.sec3 .container .boxes .pic {
+  transition: 0.5s;
+  position: relative;
+}
+.sec3 .container .boxes .pic:hover {
+  transform: scale(1.1);
+}
+.sec3 .container .boxes .pic .box {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  text-align: center;
+  background-color: rgb(238, 66, 66);
+}
+.sec3 .container .boxes .pic .box h6 {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 767px) {
+  .sec3 .container h2 {
+    font-size: small;
+    width: 100%;
+  }
+  .sec3 .container p {
+    font-size: small;
+    width: 100%;
+  }
+}
+.sec4 .div-sec4 {
+  margin-bottom: 100px;
+  margin-top: 150px;
+  background-image: url(../images/callto-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+.sec4 .div-sec4 .div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+}
+.sec4 .div-sec4 .div h2 {
+  color: white;
+  font-size: 70px;
+}
+.sec4 .div-sec4 .div p {
+  color: white;
+  width: 1200px;
+  text-align: center;
+}
+.sec4 .div-sec4 .div button {
+  background-color: rgb(250, 32, 32);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  padding: 15px 40px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: 0.8s;
+}
+.sec4 .div-sec4 .div button:hover {
+  border-color: white;
+  background-color: transparent;
+}
+@media only screen and (max-width: 767px) {
+  .sec4 .div-sec4 {
+    max-width: 100% !important;
+    background-position: center;
+  }
+  .sec4 .div-sec4 .div {
+    width: 100%;
+  }
+  .sec4 .div-sec4 .div p {
+    width: 300px;
+    font-size: medium;
+  }
+  .sec4 .div-sec4 .div h2 {
+    width: 300px;
+    font-size: medium;
+  }
+}
+
+footer {
+  height: 20vh;
+}
+footer .container .footer2 .foot {
+  height: 80px;
+  align-items: center;
+  display: flex;
+}
+footer .container .footer2 .foot .colorlib {
+  font-size: 18px;
+}
+footer .container .footer2 .icon-div .icons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  float: right;
+}
+footer .container .footer2 .icon-div .icons .fa-brands {
+  background-color: black;
+  color: rgb(206, 206, 206);
+  padding: 20px;
+  float: right;
+  transition: 0.5s;
+}
+footer .container .footer2 .icon-div .icons .fa-brands:hover {
+  background-color: rgb(250, 32, 32);
+}
+
+@media only screen and (max-width: 767px) {
+  footer .container .footer2 .icon-div .icons {
+    float: left;
+  }
+}/*# sourceMappingURL=style.css.map */
